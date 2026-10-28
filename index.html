@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f1115">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Tracker">
+<title>Gym & Food Tracker</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="view"></main>
+<div id="timer" class="hidden">
+  <span id="timerText">1:30</span>
+  <button data-act="timerAdd">+15s</button>
+  <button data-act="timerStop">Stop</button>
+</div>
+<nav id="tabs">
+  <button data-act="tab" data-tab="workout">🏋️<span>Workout</span></button>
+  <button data-act="tab" data-tab="food">🍎<span>Food</span></button>
+  <button data-act="tab" data-tab="progress">📈<span>Progress</span></button>
+  <button data-act="tab" data-tab="settings">⚙️<span>Settings</span></button>
+</nav>
+<div id="modal" class="hidden"><div class="sheet" id="modalBody"></div></div>
+<script src="app.js"></script>
+</body>
+</html>
